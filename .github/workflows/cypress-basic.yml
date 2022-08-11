@@ -6,9 +6,19 @@ jobs:
     # let's make sure our tests pass on Chrome browser
     name: E2E on Chrome
     steps:
-      - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v4
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Run E2E tests
+        uses: cypress-io/github-action@v2
         with:
+          start: npm start
+          browser: chrome
+          component: true
+      - name: Run Component tests
+        uses: cypress-io/github-action@v2
+        with:
+          # we have already installed everything
+          install: false
           start: npm start
           browser: chrome
           component: true
