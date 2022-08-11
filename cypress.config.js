@@ -14,5 +14,6 @@ module.exports = defineConfig({
       bundler: "webpack",
     },
   },
+  port: 61234,
   video: false,
 });
