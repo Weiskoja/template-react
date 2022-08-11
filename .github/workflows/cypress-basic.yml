@@ -9,16 +9,14 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
       - name: Run E2E tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           start: npm start
           browser: chrome
       - name: Run Component tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
-          # we have already installed everything
           install: false
           start: npm start
           browser: chrome
-          command: yarn cypress run-ct
-
+          component: true
