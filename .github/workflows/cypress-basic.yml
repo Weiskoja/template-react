@@ -13,7 +13,6 @@ jobs:
         with:
           start: npm start
           browser: chrome
-          component: true
       - name: Run Component tests
         uses: cypress-io/github-action@v2
         with:
@@ -21,4 +20,5 @@ jobs:
           install: false
           start: npm start
           browser: chrome
-          component: true
+          command: yarn cypress run-ct
+
