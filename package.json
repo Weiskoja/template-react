@@ -27,7 +27,7 @@
     "codespace:test": "concurrently \"npm run start:code\" \"npm run cy:runcode\"",
     "codespace:component": "concurrently \"npm run start:code\" \"npm run cy:run:component\"",
     "local:open": "concurrently \"npm run start\" \"npm run cy:open\"",
-    "local:run": "concurrently- -kill-others --success= first \"npm run start\" \"npm run cy:run\"",
+    "local:run": "concurrently --kill-others --success=first \"npm run start\" \"npm run cy:run\"",
     "local:component": "concurrently --kill-others --success=first \"npm run start\" \"npm run cy:run:component\"",
     "local:run:record": "start 8080 cy:run:record"
   },
