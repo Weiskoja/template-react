@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Application Test",
-      "setup": "npm install --silent",
+      "setup": "npm install",
       "run": "npm run local:run",
       "input": "",
       "output": "",
