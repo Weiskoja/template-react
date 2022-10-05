@@ -3,7 +3,7 @@
     {
       "name": "Application Test",
       "setup": "npm install",
-      "run": "npm run local:run",
+      "run": "npm run codespace:test",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "Component Test",
       "setup": "npm install",
-      "run": "npm run local:component",
+      "run": "npm run codespace:component",
       "input": "",
       "output": "",
       "comparison": "included",
