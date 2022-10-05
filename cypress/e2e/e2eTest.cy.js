@@ -28,9 +28,9 @@ describe('Basic Tests', () => {
     // eslint-disable-next-line cypress/no-unnecessary-waiting
     cy.wait(DELAY).then(() => {
       /* eslint-disable no-unused-expressions */
-      expect(consoleError, 'ERRORS FOUND IN YOUR CODE, CHECK THE JS CONSOLE AND FIX THEM').to.not.be.called;
-      expect(consoleWarning, 'WARNINGS FOUND IN YOUR CODE, CHECK THE JS CONSOLE ').to.not.be.called;
-      expect(consoleLog, 'YOU SHOULD NOT HAVE console.log() IN YOUR SUBMITTED CODE').to.not.be.called;
+      expect(consoleError).to.not.be.called;
+      expect(consoleWarning).to.not.be.called;
+      expect(consoleLog).to.not.be.called;
     });
   });
 })
