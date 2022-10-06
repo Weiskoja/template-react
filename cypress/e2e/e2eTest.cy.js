@@ -20,7 +20,7 @@ describe('Basic Tests', () => {
     cy.visit(`http://localhost:${Cypress.env('theport') || 3000}`)
   })
   it('has a title', () => {
-    cy.get('header').first().should('include.text', 'Learn React')
+    cy.get('header').first().should('include.text', 'Learnz React')
   })
 
   afterEach(() => {
